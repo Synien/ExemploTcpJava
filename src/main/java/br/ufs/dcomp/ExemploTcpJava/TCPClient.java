@@ -16,12 +16,12 @@ public class TCPClient{
             
             InputStream is = sock.getInputStream(); // Canal de entrada de dados
             OutputStream os = sock.getOutputStream(); // Canal de saída de dados
-            //String msg = "Olá, DCOMP!!!";
-            Scanner msg = new Scanner(System.in);
-            PrintStream out = PrintStream(sock.getOutputStream());
+            String msg = "Olá, DCOMP!!!";
+            /*Scanner msg = new Scanner(System.in);
+            PrintStream out = new PrintStream(sock.getOutputStream());
             while (msg.hasNextLine()){
-                out = println(msg.nextLine);
-            }
+                out = println(msg.nextLine());
+            }*/
             byte[] buf = msg.getBytes(); // Obtendo a respresntação em bytes da mensagem
 
             System.out.print("[ Enviando mensagem    ..............................  ");
